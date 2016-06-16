@@ -10,6 +10,7 @@
  1. [Intro and Basic Syntax](ClassesBasicSyntax)
  2. [Advanced Syntax](ClassesAdvSyntax)
  3. [Access Levels and Computed Properties](ClassesAccessLvls)
+ 4. [Subclasses, Inheritance, and Overriding](ClassesSubclass)
 
 */
 

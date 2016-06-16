@@ -1,12 +1,6 @@
-//: ## Classes - access levels and computed properties. (internal, public, private)
+//: ## Classes - subclasses
 //: [Previous](@previous)
-
-// default class modifiers are 'inernal' which mean any file whitin the project has access to it
-// private class modifier means that only this file has access to this class
-// public class modifier means that anyone has access to it
-
 import Foundation
-
 
 class Person {
     
@@ -33,8 +27,6 @@ class Person {
         return "\(fullName) is a \(age) year old \(occupation) who works about \(hoursPerWeek) hours per week and makes a weekly salary of $\(weeklySalary)."
     }
     
-    
-    
     // custom initializer
     init(firstName: String, lastName: String, age: Int, occupation: String, hoursPerWeek: Double, hourlyRate: Double) {
         self.firstName = firstName
@@ -47,21 +39,12 @@ class Person {
     
 }
 
-var bill = Person(firstName: "Bill", lastName: "Smith", age: 25, occupation: "Developer", hoursPerWeek: 40, hourlyRate: 22.89)
-
-bill.description()
-
-Person.employer = "Google"
-
-
-
-
 class PoliceOfficer : Person {
     
     // property
     var rank : String
     
-     init(rank: String) {
+    init(rank: String) {
         self.rank = rank
         super.init(firstName: "", lastName: "", age: 0, occupation: "", hoursPerWeek: 0, hourlyRate: 0)
         
@@ -76,8 +59,6 @@ class PoliceOfficer : Person {
 var pol = PoliceOfficer(rank: "Lut")
 
 pol.description()
-
-
 
 
 

@@ -6,5 +6,6 @@
         <page name='ClassesBasicSyntax'/>
         <page name='ClassesAdvSyntax'/>
         <page name='ClassesAccessLvls'/>
+        <page name='ClassesSubclass'/>
     </pages>
 </playground>
